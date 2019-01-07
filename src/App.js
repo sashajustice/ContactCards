@@ -4,13 +4,21 @@ import ContactCard from './ContactCard'
 
 function App(props) {
     return (
-      <div className="contact-cards">
-      <img src={props.imgUrl}/>
-      <h3>{props.name}</h3>
-      <p>Phone: {props.phone}</p>
-      <p>Email: {props.email}</p>
-     
-      </div>
+      <div className="contacts">
+        <ContactCard
+          contact={{name: "David Ryan, imgUrl: "", phone: "(510) 222-1234", email: "davidryan@gmail.com}}
+      />
+
+      <ContactCard
+         contact={{name: "Yuri Navastriz, imgUrl: "", phone: "(646) 651-1298", email: "YuriNavastriz@gmail.com}}
+      />
+
+
+     <ContactCard
+     contact={{name: "Michael Androz, imgUrl: "", phone: "(510) 254-1255", email: "MichaelAndroz@gmail.com}}
+      />
+
+
     )
   }
 
